@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Видео</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      .rounded-img {
+        width: 40%;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding: 0.5em;
+        margin-bottom: 1em;
+      }
+      .rounded-logo {
+        width: 40%;
+        border-radius: 50%;
+      }
+      .rounded-logo1 {
+        width: 50px;
+        border-radius: 50%;
+      }
+      .txt-color {
+        color: aliceblue;
+      }
+      .card {
+        text-align: center;
+      }
+      .card:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container">
+        <a class="navbar-brand p-0" href="/">
+          <img class="rounded-logo1" src="logo1.png" alt="logo" width="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="videos.html">Видео</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a
+            href="https://www.youtube.com/watch?v=UruSj0Ill08"
+            alt="ТК"
+            target="_blank"
+          >
+            <img src="Привью1.jpg" class="d-block w-100" alt="ТК" />
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Кислый челлендж</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="https://www.youtube.com/watch?v=LnVIbecVtAg"
+            alt="ТК"
+            target="_blank"
+          >
+            <img src="Точный челлендж1.jpg" class="d-block w-100" alt="ТК" />
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Точный челлендж</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a
+            href="https://www.youtube.com/watch?v=XuyhlmL_lwE"
+            alt="ТК"
+            target="_blank"
+          >
+            <img src="ВРАТАРЬ ЗВЕРЬ2.jpg" class="d-block w-100" alt="ТК" />
+          </a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Вратарь зверь</h5>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="container my-5">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+        <div class="col">
+          <div class="card">
+            <img src="Кроссбар 2.jpg" class="card-img-top" alt="Привью1" />
+            <div class="card-body">
+              <h5 class="card-title">КРОССБАР ЧЕЛЛЕНДЖ#2</h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=2dXCFEUlCy0&t=2s"
+                class="btn btn-primary"
+                >Смотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="Пенальти Разн сп.jpg"
+              class="card-img-top"
+              alt="Привью1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">ПЕНАЛЬТИ РАЗНЫМИ СПОСОБАМИ</h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=yPhjMPKasrM&t=915s"
+                class="btn btn-primary"
+                >Смотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Разные мячи.jpg" class="card-img-top" alt="Привью1" />
+            <div class="card-body">
+              <h5 class="card-title">Разные мячи</h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=vHN-PxA7LN0&t=346s"
+                class="btn btn-primary"
+                >Смотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Точность сила.jpg" class="card-img-top" alt="Привью1" />
+            <div class="card-body">
+              <h5 class="card-title">СИЛА vs ТОЧНОСТЬ</h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=j31sRWpSgdo&t=98s"
+                class="btn btn-primary"
+                >Смотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="Точный№2.jpg" class="card-img-top" alt="Привью1" />
+            <div class="card-body">
+              <h5 class="card-title">ТОЧНЫЙ ЧЕЛЛЕНДЖ #2</h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=k95F51VDUAQ&t=279s"
+                class="btn btn-primary"
+                >Смотреть</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="уке.jpg" class="card-img-top" alt="Привью1" />
+            <div class="card-body">
+              <h5 class="card-title">АДСКИЙ СКОТЧ</h5>
+
+              <a
+                href="https://www.youtube.com/watch?v=LHXDnB_mw5s"
+                class="btn btn-primary"
+                >Смотреть</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
